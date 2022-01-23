@@ -1,15 +1,17 @@
 import Image from "next/image";
 
+import merlinLogo from "../../public/merlinLogo.svg";
+
 export default function Home() {
     return (
         <div className="w-screen h-screen overflow-hidden flex justify-center">
-            <div className="w-full h-full px-2 max-w-7xl sm:px-4 md:px-8 flex items-center justify-center flex-col">
-                <div className="w-full h-40 relative">
-                    <Image src="/merlinLogo.svg" layout="fill" objectFit="fill" alt="Merlin Logo"></Image>
+            <div className="w-full h-full px-8 max-w-7xl sm:px-16 md:px-32 flex items-center justify-center flex-col">
+                <div className="w-full lg:w-4/6 relative">
+                    <Image src={merlinLogo} layout="responsive" alt="Merlin Logo"></Image>
                 </div>
 
-                <h1 className="mt-10 text-2xl font-medium text-gray-800">
-                    Merlin is a moderation panel for Roblox, built for{" "}
+                <h1 className="mt-10 text-2xl font-medium text-gray-800 text-center">
+                    Merlin is a Roblox moderation panel, built for{" "}
                     <span className="text-primary font-semibold">Scale</span>.
                 </h1>
 
